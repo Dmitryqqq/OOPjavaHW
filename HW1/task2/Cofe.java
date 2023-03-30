@@ -5,6 +5,7 @@ public class Cofe {
     private double prise;
     private double cofe;
     private int water;
+    private int milk;
     
     // Конструктор класса
     public Cofe(String name, int volume, int temperature, double prise){
@@ -12,17 +13,21 @@ public class Cofe {
         this.name = name;
         this.volume = volume;
         this.prise = prise;
-        this.cofe = 1.5;
+        this.cofe = 2;
         this.water = volume;
+        this.milk =0;
 
 
 
 
     }
-    
-    // public double getCofe() {
-    //     return cofe;
-    // }
+    public int getMilk() {
+        return milk;
+    }
+
+    public double getCofe() {
+        return cofe;
+    }
     public String getName() {
         return name;
     }
