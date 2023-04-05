@@ -8,7 +8,7 @@ public class Main {
         zoo.addAnimal(new Goat("Маня"));
         zoo.addAnimal(new Bat("Микки"));
         zoo.addAnimal(new Bear("Косолапыч", 61));
-        //zoo.addAnimal(new Shark("Большая Белая"));
+        zoo.addAnimal(new Shark("Большая Белая"));
         
         zoo.addAnimal(new Dolfin("Шустрый"));
 
@@ -17,6 +17,7 @@ public class Main {
         Shark s1 = new Shark("Зверюга");
         System.out.println(s1);
         System.out.printf("Скорость плавания: %d ",s1.swimSpeed());
+        
 
         System.out.println();
         System.out.println("Чемпион по бегу: ");

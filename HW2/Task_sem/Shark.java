@@ -11,6 +11,11 @@ public class Shark extends Fish {
     @Override
     public int swimSpeed() {
         
-        return 19;
+        return 31;
     }
+     @Override
+     public String speak() {
+         
+         return "";
+     }
 }
