@@ -14,7 +14,7 @@ public class Node {
         
     // }
 
-    public Node addEnd (Node n, int val) {
+    public void addEnd (Node n, int val) {
         System.out.println("Dobavlzem "+val);
         if (n.nextNode == null) {
             n.nextNode = new Node(val);
@@ -26,7 +26,7 @@ public class Node {
             
         }
 
-        return this;
+       // return this;
     }
 
     public int size() { return count;}
