@@ -14,15 +14,15 @@ public class Node {
         
     // }
 
-    public void addEnd (Node n, int val) {
+    public void addEnd ( int val) {
         System.out.println("Dobavlzem "+val);
-        if (n.nextNode == null) {
-            n.nextNode = new Node(val);
+        if (this.nextNode == null) {
+            this.nextNode = new Node(val);
             count++;
             System.out.println("Sozdal");
         } else {
             System.out.println("Perehod");
-            addEnd(nextNode, val);
+            nextNode.addEnd( val);
             
         }
 
