@@ -19,6 +19,11 @@ public class UserController {
         repository.CreateUser(user);
     }
 
+    public void renum() {
+        
+        repository.renum();
+    }
+
     public User readUser(String userId) throws Exception {
         List<User> users = repository.getAllUsers();
         for (User user : users) {
@@ -45,7 +50,7 @@ public class UserController {
     }
     public void delUser(List<User> userd){
         //valid.validate(user);
-        repository.renumUser(userd);
+        repository.delUser(userd);
     }
 
     public List<User> allUsers() {

@@ -9,5 +9,8 @@ public interface Repository {
     void updateUser(User user);
 
     // удаление пользователя
-    void renumUser(List<User> userd);
+    void delUser(List<User> userd);
+
+    void renum();
+    
 }

@@ -1,7 +1,8 @@
 package personal.views;
 
 import personal.controllers.UserController;
-//import personal.model.Repository;
+import personal.model.RepositoryFile;
+import personal.model.Repository;
 import personal.model.User;
 
 //import java.util.ArrayList;
@@ -32,7 +33,9 @@ public class ViewUser {
                     case READ:
                         read();
                     case DELETE:
-                        delete();    
+                        delete();
+                    case RENUM:
+                        renum();    
 
                         break;
                     case LIST:
@@ -71,6 +74,14 @@ public class ViewUser {
         User user = userController.readUser(id);
         System.out.println(user);
     }
+    
+    public void renum(){
+       
+        userController.renum();
+        
+     }
+
+ 
 
     private void list() {
         List<User> allUsers = userController.allUsers();

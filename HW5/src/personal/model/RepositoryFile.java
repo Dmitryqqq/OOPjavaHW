@@ -43,17 +43,27 @@ public class RepositoryFile implements Repository {
 
     // удаление пользователя с перенумерацией
     @Override
-    public void renumUser(List<User> userd){
+    public void delUser(List<User> userd){
        
-        Integer i = 1;
-        for (User element : userd) {
-            element.setId(i.toString());
-            i++;
-        }
+        // Integer i = 1;
+        // for (User element : userd) {
+        //     element.setId(i.toString());
+        //     i++;
+        // }
 
         
         saveUser(userd);
         
+    }
+    @Override
+    public void renum(){
+        List<User> lis = getAllUsers();
+        Integer i = 1;
+        for (User element : lis) {
+            element.setId(i.toString());
+            i++;
+        }
+        saveUser(lis);
     }
 
     private void saveUser(List<User> users) {
