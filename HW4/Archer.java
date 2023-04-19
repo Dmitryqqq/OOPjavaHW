@@ -1,4 +1,4 @@
-public class Archer extends Warrior<Throwing>{
+public class Archer extends Warrior<Throwing,SmallShild>{
     public Archer(String name, int hp, Throwing weapon, Shilds shild) {
         super(name, hp, weapon, shild);
         //this.shild = shild;

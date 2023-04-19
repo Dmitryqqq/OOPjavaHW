@@ -1,4 +1,4 @@
-public class Prashtnic extends Warrior<Throwing>{
+public class Prashtnic extends Warrior<Throwing,SmallShild>{
     public Prashtnic(String name, int hp, Throwing weapon, Shilds shild) {
         super(name, hp, weapon, shild);
         //this.shild = shild;

@@ -8,7 +8,7 @@ public class Shilds implements Defense{
     }
     public Shilds (int defense){
         this.def = defense;
-        this.name = "Щит";
+        this.name = "Броня";
     }
     public Shilds (){
         this.name = "Без Щита";

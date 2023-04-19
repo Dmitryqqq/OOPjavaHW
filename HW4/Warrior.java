@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public abstract class Warrior<T extends Weapon> extends Personage{   //T extends Weapon, Shilds
+public abstract class Warrior<T extends Weapon, S extends Shilds> extends Personage{   //T extends Weapon, Shilds
 protected static Random rnd = new Random();
     protected T weapon;
     protected Shilds shild;
