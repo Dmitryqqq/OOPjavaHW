@@ -4,7 +4,7 @@ public abstract class Warrior<T extends Weapon> extends Personage{   //T extends
 protected static Random rnd = new Random();
     protected T weapon;
     protected Shilds shild;
-    public Warrior(String name, int hp, T weapon, Shilds shild) {
+    public Warrior(String name, int hp, T weapon, Shilds shild) { // Щит можно задать при создании
         super(name, hp);
         this.shild = shild;
         //this.defense = shild.def;
@@ -12,7 +12,7 @@ protected static Random rnd = new Random();
         
     }
 
-    public Warrior(String name, int hp, T weapon) {
+    public Warrior(String name, int hp, T weapon) {  // если при создании воина щит не указан то от равен нулю "без щита"
         super(name, hp);
         this.shild = new Shilds();
         //this.defense = shild.def;
