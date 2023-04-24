@@ -1,11 +1,9 @@
-package personal.views;
+package HW6.views;
 
-import personal.controllers.UserController;
-import personal.model.RepositoryFile;
-import personal.model.Repository;
-import personal.model.User;
-
-//import java.util.ArrayList;
+import HW6.controllers.UserController;
+import HW6.model.RepositoryFile;
+import HW6.model.Repository;
+import HW6.model.User;
 import java.util.List;
 import java.util.Scanner;
 
@@ -32,10 +30,8 @@ public class ViewUser {
                         break;
                     case READ:
                         read();
-                        break;
                     case DELETE:
                         delete();
-                        break;
                     case RENUM:
                         renum();    
 

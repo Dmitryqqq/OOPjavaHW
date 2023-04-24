@@ -1,4 +1,4 @@
-package personal.model;
+package HW6.model;
 
 import java.util.ArrayList;
 import java.util.List;
